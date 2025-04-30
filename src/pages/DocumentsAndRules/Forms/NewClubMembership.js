@@ -33,7 +33,7 @@ function NewClubMembership() {
           <div className="buttons">
             {/* ✅ View the form in a new tab */}
             <a
-              href="/assets/videos/new_club_membership_form.pdf"
+              href="/assets/documents/new_club_membership_form.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-view"
@@ -43,7 +43,7 @@ function NewClubMembership() {
 
             {/* ✅ Download the form directly */}
             <a
-              href="/assets/videos/new_club_membership_form.pdf"
+              href="/assets/documents/new_club_membership_form.pdf"
               download
               className="btn-download"
             >
