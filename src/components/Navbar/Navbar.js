@@ -1,3 +1,5 @@
+// src/components/Navbar/Navbar.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -8,7 +10,6 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container">
 
-          {/* मोबाइल टॉगल */}
           <button
             className="navbar-toggler"
             type="button"
@@ -18,7 +19,6 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* मेनू आइटम्स */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
 
@@ -27,9 +27,7 @@ export default function Navbar() {
               </li>
 
               <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link dropdown-toggle" role="button">
-                  Events
-                </span>
+                <span className="nav-link dropdown-toggle" role="button">Events</span>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/domestic-sailing-calendar">Domestic Sailing Calendar</Link></li>
                   <li><Link className="dropdown-item" to="/nor">NOR</Link></li>
@@ -38,9 +36,7 @@ export default function Navbar() {
               </li>
 
               <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link dropdown-toggle" role="button">
-                  Multimedia
-                </span>
+                <span className="nav-link dropdown-toggle" role="button">Multimedia</span>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/images">Images</Link></li>
                   <li><Link className="dropdown-item" to="/videos">Videos</Link></li>
@@ -48,15 +44,11 @@ export default function Navbar() {
               </li>
 
               <li className="nav-item dropdown hover-dropdown">
-                <span className="nav-link dropdown-toggle" role="button">
-                  Documents & Rules
-                </span>
+                <span className="nav-link dropdown-toggle" role="button">Documents & Rules</span>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/constitution">Constitution</Link></li>
                   <li className="dropdown-submenu">
-                    <span className="dropdown-item dropdown-toggle" role="button">
-                      Forms
-                    </span>
+                    <span className="dropdown-item dropdown-toggle" role="button">Forms</span>
                     <ul className="dropdown-menu">
                       <li><Link className="dropdown-item" to="/forms/new-club-membership">New Club Membership Form</Link></li>
                       <li><Link className="dropdown-item" to="/forms/issue-opti-sail-number">Issue OPTI Sail Number Form</Link></li>
