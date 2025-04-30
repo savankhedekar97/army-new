@@ -1,0 +1,115 @@
+/* ===== Container Overflow ===== */
+.menu-bar {
+  overflow: visible !important;
+}
+.menu-bar .navbar {
+  overflow: visible !important;
+  padding: 0.5rem 0;
+  background-color: #2196F3; /* हल्का ब्लू */
+}
+
+/* ===== Nav Links ===== */
+.navbar-nav .nav-link {
+  position: relative;
+  margin: 0 1rem;
+  padding: 0.5rem 0.75rem;
+  color: #fff !important;
+  font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+/* Hover पर हल्का उठना और रंग बदलना */
+.navbar-nav .nav-link:hover {
+  transform: translateY(-3px) scale(1.05);
+  color: #FFD54F !important; /* हल्का येलो */
+}
+
+/* ===== Conic-Gradient Flag-Border (हल्की टोन) ===== */
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: conic-gradient(
+    from 0deg,
+    #FFA726, /* हल्का केसरी */
+    #FFFFFF, /* सफेद */
+    #81C784, /* हल्का हरा */
+    #FFA726
+  );
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+.navbar-nav .nav-link:hover::before {
+  opacity: 1;
+}
+
+/* ===== Dropdown Base ===== */
+.dropdown,
+.dropdown-submenu {
+  position: relative;
+}
+
+/* ===== Dropdown मेनू छुपा ===== */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: linear-gradient(135deg, #e0f7fa, #ffe0b2);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  backdrop-filter: blur(8px);
+  padding: 8px 0;
+  z-index: 2000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover पर दिखाओ */
+.hover-dropdown:hover > .dropdown-menu,
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ===== Dropdown Items ===== */
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1.2rem;
+  color: #333 !important;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #64B5F6, #FFD54F);
+  color: #fff !important;
+  transform: scale(1.05);
+  border-radius: 4px;
+}
+
+/* ===== Submenu Positioning ===== */
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 4px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

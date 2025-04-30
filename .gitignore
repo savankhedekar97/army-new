@@ -1,0 +1,51 @@
+# dependencies
+/node_modules
+
+# production build
+/build
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# testing
+/coverage
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# Mac System Files
+*.DS_Store
+
+# parcel cache
+.cache/
+
+# eslint cache
+.eslintcache
+
+# optional npm cache directory
+.npm
+
+# optional yarn cache directory
+.yarn/cache
+
+# optional dotenv override file
+.env.override

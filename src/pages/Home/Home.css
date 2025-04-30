@@ -1,0 +1,62 @@
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e8f4fa;
+}
+
+.hero-banner {
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+
+.hero-banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero-banner p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  gap: 30px;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.home-card h2 {
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.home-card a {
+  display: block;
+  margin: 8px 0;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-card:hover {
+  transform: scale(1.05);
+}
