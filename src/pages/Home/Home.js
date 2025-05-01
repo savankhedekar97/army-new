@@ -1,18 +1,15 @@
 import React from "react";
 import "./Home.css";
+import HomeSlider from "./HomeSlider"; // ✅ Correct relative path
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <div
-        className="hero-banner"
-        style={{ backgroundImage: "url('/assets/hero/hero1.jpg')" }} // ✅ public path used
-      >
-        <h1>Welcome to Army Sailing Portal</h1>
-        <p>Explore Events, Media and Contact Support</p>
-      </div>
+      {/* ✅ Top banner slider */}
+      <HomeSlider />
 
+      {/* ✅ Info cards */}
       <div className="card-section">
         <div className="home-card">
           <h2>Events</h2>
