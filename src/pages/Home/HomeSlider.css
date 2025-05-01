@@ -1,0 +1,67 @@
+.home-slider {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    max-width: 600px;
+    width: 80%;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .overlay-box h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .overlay-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .overlay-box button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .nav-arrow.left {
+    left: 10px;
+  }
+  
+  .nav-arrow.right {
+    right: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
